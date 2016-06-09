@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "706447098975",
+    "firebase_url": "https://geeksdeck-sample.firebaseio.com",
+    "project_id": "geeksdeck-sample",
+    "storage_bucket": "geeksdeck-sample.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706447098975:android:5dff07e4442eaed7",
+        "android_client_info": {
+          "package_name": "com.geeksdeck.firebasesample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706447098975-oql3cn22rl3l9k9rb03v6gg9f8dlojio.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.geeksdeck.firebasesample",
+            "certificate_hash": "4ECB9F4A34593CE98197BDF70AB2F5A2440A5D65"
+          }
+        },
+        {
+          "client_id": "706447098975-6ftc5qrkvrr9jalk8c2o8ojtbf3kuoo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHgO6YfdkJtJzX3BitnqNpI4iT7nm0wwA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706447098975-6ftc5qrkvrr9jalk8c2o8ojtbf3kuoo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
