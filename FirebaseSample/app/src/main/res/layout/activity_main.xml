@@ -9,8 +9,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.geeksdeck.firebasesample.MainActivity">
 
-    <TextView
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/welcome_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:text="Welcome"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Sing out"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
 </RelativeLayout>
