@@ -1,18 +1,15 @@
-package com.geeksdeck.firebasesample;
+package com.geeksdeck.firebasesample.model;
 
-/**
- * Created by syron on 13.06.16.
- */
 public class ChatMessage {
 
-     String message;
-     String name;
+    private String message;
+    private String name;
 
     // Required default constructor for Firebase object mapping
     private ChatMessage() {
     }
 
-    ChatMessage(String message, String author) {
+    public ChatMessage(String message, String author) {
         this.message = message;
         this.name = author;
     }

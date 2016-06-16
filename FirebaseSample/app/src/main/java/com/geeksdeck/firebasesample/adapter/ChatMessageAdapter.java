@@ -1,4 +1,4 @@
-package com.geeksdeck.firebasesample;
+package com.geeksdeck.firebasesample.adapter;
 
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.geeksdeck.firebasesample.model.ChatMessage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +46,6 @@ public class ChatMessageAdapter extends RecyclerView.Adapter<ChatMessageAdapter.
 
 
     public class ChatMessageViewHolder extends RecyclerView.ViewHolder {
-        private static final String TAG = "ChatMessageViewHolder";
         private final Activity activity;
 
         TextView name, message;
@@ -56,24 +56,24 @@ public class ChatMessageAdapter extends RecyclerView.Adapter<ChatMessageAdapter.
             this.activity = activity;
             name = (TextView) itemView.findViewById(android.R.id.text1);
             message = (TextView) itemView.findViewById(android.R.id.text2);
-            image= new ImageView(activity);
-            ((ViewGroup)itemView).addView(image);
+            image = new ImageView(activity);
+            ((ViewGroup) itemView).addView(image);
 
         }
 
         public void bind(ChatMessage chat) {
-            name.setText(chat.name);
-            if (chat.message.startsWith("https://firebasestorage.googleapis.com/") || chat.message.startsWith("content://")) {
+            name.setText(chat.getName());
+            //Message is an image
+            if (chat.getMessage().startsWith("https://firebasestorage.googleapis.com/") || chat.getMessage().startsWith("content://")) {
                 message.setVisibility(View.INVISIBLE);
                 image.setVisibility(View.VISIBLE);
                 Glide.with(activity)
-                        .load(chat.message)
+                        .load(chat.getMessage())
                         .into(image);
-            }
-            else {
+            } else {
                 message.setVisibility(View.VISIBLE);
                 image.setVisibility(View.GONE);
-                message.setText(chat.message);
+                message.setText(chat.getMessage());
             }
         }
     }

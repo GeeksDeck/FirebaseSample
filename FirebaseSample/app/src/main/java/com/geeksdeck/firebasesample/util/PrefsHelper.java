@@ -1,11 +1,11 @@
-package com.geeksdeck.firebasesample;
+package com.geeksdeck.firebasesample.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-/**
- * Created by syron on 13.06.16.
- */
+import com.geeksdeck.firebasesample.SampleApplication;
+
+
 public class PrefsHelper {
     public static final String SHARED_PREFERENCES = "SamplePrefs";
     private static final SharedPreferences sSharedPreferences = SampleApplication

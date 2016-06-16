@@ -1,4 +1,4 @@
-package com.geeksdeck.firebasesample;
+package com.geeksdeck.firebasesample.util;
 
 
 import android.app.Activity;
@@ -14,9 +14,7 @@ import com.firebase.client.FirebaseError;
 import com.firebase.client.Query;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @author greg
