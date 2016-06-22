@@ -61,6 +61,7 @@ public class ChatMessageAdapter extends RecyclerView.Adapter<ChatMessageAdapter.
 
         }
 
+        //Bind data model with View
         public void bind(ChatMessage chat) {
             name.setText(chat.getName());
             //Message is an image
